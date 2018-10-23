@@ -1,0 +1,31 @@
+
+/*header*/
+.nav span{
+	font-size: 24px;
+	color: white;
+}
+header li{
+	display: inline-block;
+	color: white;
+	padding: 0 5px;
+	line-height: 3;
+}
+.notice{
+	color: green;
+}
+/*home*/
+.home a{
+	color: #666;
+}
+/*sign_in,up*/
+.field{
+	margin-bottom: 10px;
+}
+
+.error-explanation h2,.error-explanation li{
+	color: red;
+}
+
+/*books*/
+
+/*users*/
