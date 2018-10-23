@@ -1,0 +1,31 @@
+<!-- users_pathで利用するview -->
+
+<div class="container">
+  <div class="row">
+  	<%= render 'books/user_info', book: @book, user: @user %>
+
+  	<div class="col-xs-9">
+  	  <h2>Users</h2>
+  		<table class="table">
+        <thead>
+    		  <tr>
+    			  <th>image</th>
+    			  <th>name</th>
+    		  </tr>
+        </thead>
+        <tbody>
+    		  <% @users.each do |users| %>
+    		    <tr>
+              <td>
+                <%= attachment_image_tag users, :profile_image, :fill, 40, 40, fallback: "no_image2.jpg", alt:"Profile image"%>
+              </td>
+    		  	  <td><%= users.name %></td>
+              <td><%= link_to 'show', user_path(users.id), class: "user_#{@user.id}" %></td>
+    		    </tr>
+    		  <% end %>
+        </tbody>
+  		</table>
+  	</div>
+    
+  </div>
+</div>
