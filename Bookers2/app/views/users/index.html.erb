@@ -20,7 +20,7 @@
                 <%= attachment_image_tag users, :profile_image, :fill, 40, 40, fallback: "no_image2.jpg", alt:"Profile image"%>
               </td>
     		  	  <td><%= users.name %></td>
-              <td><%= link_to 'show', user_path(users.id), class: "user_#{@user.id}" %></td>
+              <td><%= link_to 'show', user_path(users.id), class: "user_#{users.id}" %></td>
     		    </tr>
     		  <% end %>
         </tbody>
